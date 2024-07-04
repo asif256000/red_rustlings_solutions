@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // primitive_types5.rs
 //
 // Destructure the `cat` tuple so that the println will work.
@@ -8,6 +9,13 @@
 fn main() {
     let cat = ("Furry McFurson", 3.5);
     let (name, age) = cat;
+=======
+fn main() {
+    let cat = ("Furry McFurson", 3.5);
+>>>>>>> upstream/main
 
-    println!("{} is {} years old.", name, age);
+    // TODO: Destructure the `cat` tuple in one statement so that the println works.
+    // let /* your pattern here */ = cat;
+
+    println!("{name} is {age} years old");
 }

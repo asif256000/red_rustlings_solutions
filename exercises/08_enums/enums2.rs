@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // enums2.rs
 //
 // Execute `rustlings hint enums2` or use the `hint` watch subcommand for a
@@ -10,6 +11,11 @@ enum Message {
     Echo(String),
     ChangeColor(i32, i32, i32),
     Quit,
+=======
+#[derive(Debug)]
+enum Message {
+    // TODO: Define the different variants used below.
+>>>>>>> upstream/main
 }
 
 impl Message {

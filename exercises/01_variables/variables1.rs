@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // variables1.rs
 //
 // Make me compile!
@@ -8,4 +9,11 @@
 fn main() {
     let x = 5;
     println!("x has the value {}", x);
+=======
+fn main() {
+    // TODO: Add missing keyword.
+    x = 5;
+
+    println!("x has the value {x}");
+>>>>>>> upstream/main
 }

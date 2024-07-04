@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // move_semantics4.rs
 // Refactor this code so that instead of passing `vec0` into the `fill_vec` function,
 // the Vector gets created in the function itself and passed back to the main
@@ -23,4 +24,23 @@ fn fill_vec() -> Vec<i32> {
     vec.push(66);
 
     vec
+=======
+fn main() {
+    // You can optionally experiment here.
+}
+
+#[cfg(test)]
+mod tests {
+    // TODO: Fix the compiler errors only by reordering the lines in the test.
+    // Don't add, change or remove any line.
+    #[test]
+    fn move_semantics5() {
+        let mut x = 100;
+        let y = &mut x;
+        let z = &mut x;
+        *y += 100;
+        *z += 1000;
+        assert_eq!(x, 1200);
+    }
+>>>>>>> upstream/main
 }

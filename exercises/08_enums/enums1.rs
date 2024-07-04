@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // enums1.rs
 //
 // No hints this time! ;)
@@ -9,6 +10,11 @@ enum Message {
     Echo,
     Move,
     ChangeColor,
+=======
+#[derive(Debug)]
+enum Message {
+    // TODO: Define a few types of messages as used below.
+>>>>>>> upstream/main
 }
 
 fn main() {

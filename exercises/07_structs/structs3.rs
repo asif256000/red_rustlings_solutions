@@ -1,9 +1,11 @@
-// structs3.rs
-//
 // Structs contain data, but can also have logic. In this exercise we have
+<<<<<<< HEAD
 // defined the Package struct and we want to test some logic attached to it.
 // Make the code compile and the tests pass!
 // Execute `rustlings hint structs3` or use the `hint` watch subcommand for a hint.
+=======
+// defined the `Package` struct and we want to test some logic attached to it.
+>>>>>>> upstream/main
 
 #[derive(Debug)]
 struct Package {
@@ -13,20 +15,21 @@ struct Package {
 }
 
 impl Package {
-    fn new(sender_country: String, recipient_country: String, weight_in_grams: u32) -> Package {
+    fn new(sender_country: String, recipient_country: String, weight_in_grams: u32) -> Self {
         if weight_in_grams < 10 {
-            // This is not how you should handle errors in Rust,
-            // but we will learn about error handling later.
-            panic!("Can not ship a package with weight below 10 grams.")
-        } else {
-            Package {
-                sender_country,
-                recipient_country,
-                weight_in_grams,
-            }
+            // This isn't how you should handle errors in Rust, but we will
+            // learn about error handling later.
+            panic!("Can't ship a package with weight below 10 grams");
+        }
+
+        Self {
+            sender_country,
+            recipient_country,
+            weight_in_grams,
         }
     }
 
+<<<<<<< HEAD
     fn is_international(&self) -> bool {
         // Something goes here...
         self.sender_country != self.recipient_country
@@ -35,7 +38,22 @@ impl Package {
     fn get_fees(&self, cents_per_gram: i32) -> i32 {
         // Something goes here...
         self.weight_in_grams as i32 * cents_per_gram
+=======
+    // TODO: Add the correct return type to the function signature.
+    fn is_international(&self) {
+        // TODO: Read the tests that use this method to find out when a package
+        // is considered international.
     }
+
+    // TODO: Add the correct return type to the function signature.
+    fn get_fees(&self, cents_per_gram: u32) {
+        // TODO: Calculate the package's fees.
+>>>>>>> upstream/main
+    }
+}
+
+fn main() {
+    // You can optionally experiment here.
 }
 
 #[cfg(test)]
